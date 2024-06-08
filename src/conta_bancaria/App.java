@@ -18,9 +18,25 @@ public class App {
 			System.out.println("saldo insuficiente");
 		}
 		
+		//	 	deposit
 		
-		// 	deposit
+		
+		account.deposit(100.0);
+		account.deposit(50.0);
+		account.deposit(100.0);
+				
+		if (!account.withDraw(200.00)) {
+			System.out.println("saldo insuficiente");
+		} 
+		
+		if (!account.withDraw(200.00)) {
+			System.out.println("saldo insuficiente");
+		} 
+		
 		// inform the user of movement
+		System.out.println(account);
+				
+		
 	}
 
 }
