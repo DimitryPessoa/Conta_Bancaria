@@ -6,6 +6,8 @@ public class Account {
 	private String cc;
 	private String name;
 	
+	private double balance;
+	
 	private static final int MAX_LENGTH = 20;
 	
 	public Account(String ag, String cc, String name) {
@@ -23,4 +25,18 @@ public class Account {
 		}
 		System.out.println(this.name);
 	}
+	
+	public boolean withDraw(double value) {
+		if (balance < value) {
+			return false;
+		} else {
+			balance = balance - value;
+			return true;
+		}
+		
+		
+		
+	}
+	
+	
 }
