@@ -30,5 +30,14 @@ public class Bank {
 		lastAccount++;
 		return account;
 	}
+	
+	public void outputTotal() {
+		double total = 0;
+		for(Account account : accounts) {
+			double balance = account.getBalance();
+			total = total + balance;
+		}
+		System.out.println("Banco possui agora R$"+ total);
+	}
 
 }

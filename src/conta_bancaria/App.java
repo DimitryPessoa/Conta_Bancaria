@@ -32,6 +32,7 @@ public class App {
 		for(Account cc: accountList) {
 			System.out.println(cc);
 		}
+		caixa.outputTotal();
 		
 		//Account account = new Account("001", "1234", "Usuario1");
 				
